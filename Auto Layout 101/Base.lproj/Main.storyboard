@@ -83,27 +83,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUm-cQ-kYk" userLabel="BlueView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUm-cQ-kYk" userLabel="BlueView">
                                 <rect key="frame" x="224" y="0.0" width="151" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.00092539059728047324" green="0.43332275322915481" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ueB-xd-tHJ" userLabel="PurpleView">
                                 <rect key="frame" x="0.0" y="473" width="375" height="194"/>
                                 <color key="backgroundColor" red="0.41568627450000001" green="0.0" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRK-lc-Z8C" userLabel="RedView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRK-lc-Z8C" userLabel="RedView">
                                 <rect key="frame" x="0.0" y="0.0" width="165" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.041046944598614132" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HUm-cQ-kYk" firstAttribute="height" secondItem="HKC-0D-6Kh" secondAttribute="height" multiplier="1:2" id="6jG-AB-UXW"/>
+                            <constraint firstItem="HUm-cQ-kYk" firstAttribute="width" secondItem="HKC-0D-6Kh" secondAttribute="width" multiplier="1:3" id="AQQ-vo-uYE"/>
+                            <constraint firstItem="DRK-lc-Z8C" firstAttribute="height" secondItem="HKC-0D-6Kh" secondAttribute="height" multiplier="1:2" id="ARL-GX-vfj"/>
+                            <constraint firstAttribute="topMargin" secondItem="DRK-lc-Z8C" secondAttribute="top" id="K0w-oM-Y4M"/>
                             <constraint firstAttribute="bottomMargin" secondItem="ueB-xd-tHJ" secondAttribute="bottom" id="ODG-aX-Vns"/>
+                            <constraint firstAttribute="trailing" secondItem="HUm-cQ-kYk" secondAttribute="trailing" id="Shq-tS-Whz"/>
+                            <constraint firstItem="DRK-lc-Z8C" firstAttribute="width" secondItem="HKC-0D-6Kh" secondAttribute="width" multiplier="2:3" id="VQP-r2-k1x"/>
                             <constraint firstItem="ueB-xd-tHJ" firstAttribute="height" secondItem="HKC-0D-6Kh" secondAttribute="height" multiplier="1:2" id="cLg-8A-ITV"/>
                             <constraint firstAttribute="trailing" secondItem="ueB-xd-tHJ" secondAttribute="trailing" id="phX-tr-ecE"/>
+                            <constraint firstAttribute="topMargin" secondItem="HUm-cQ-kYk" secondAttribute="top" id="ujA-rN-c9l"/>
                             <constraint firstItem="ueB-xd-tHJ" firstAttribute="leading" secondItem="HKC-0D-6Kh" secondAttribute="leading" id="wuZ-Ev-00a"/>
+                            <constraint firstItem="DRK-lc-Z8C" firstAttribute="leading" secondItem="HKC-0D-6Kh" secondAttribute="leading" id="x5L-Nv-rXV"/>
                         </constraints>
                     </view>
                 </viewController>
